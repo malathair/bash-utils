@@ -39,9 +39,17 @@ change_extensions()
 
     for file in *.$old_ext; do
         if $verbose; then
-            echo "Renaming $file to ${file%.$old_ext}.$new_ext"
+            echo -n "$file -> ${file%.$old_ext}.$new_ext ... "
         fi
         mv -- "$file" "${file%.$old_ext}.$new_ext"
+
+        if $verbose; then
+            if [ $? -eq 0 ]; then
+                echo "done"
+            else
+                echo "failed"
+            fi
+        fi
     done
 }
 
