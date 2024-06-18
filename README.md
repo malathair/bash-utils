@@ -11,5 +11,5 @@ curl https://raw.githubusercontent.com/malathair/extch/main/install.sh | bash
 
 or alternatively you can run this to install globally for all users:
 ```bash
-curl https://raw.githubusercontent.com/malathair/extch/main/install.sh | bash
+curl https://raw.githubusercontent.com/malathair/extch/main/install.sh | sudo bash
 ```
