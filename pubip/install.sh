@@ -12,12 +12,12 @@ get_install_dir() {
 
         # Check to see if the user has an existing private bin
         # Prefer ~/bin over ~/.local/bin if both exist
-        # If there is not an existing private bin then create it at ~/bin
+        # If there is not an existing private bin then create it at ~/.local/bin
         if [ ! -d "$HOME/bin" ]; then
             if [ -d "$HOME/.local/bin" ]; then
                 INSTALL_DIR="$HOME/.local/bin"
             else
-                mkdir "$HOME/bin"
+                mkdir -p "$HOME/.local/bin"
             fi
         fi
 
