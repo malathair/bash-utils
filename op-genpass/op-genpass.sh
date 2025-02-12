@@ -36,11 +36,10 @@ while getopts "hn:l:" opt; do
 done
 
 for i in $(seq 1 $number); do
-    op item create                                   \
-        --dry-run                                    \
-        --category Password                          \
-        --generate-password="letters,digits,$length" \
-        --format json                                \
-        | jq -r '.fields[]                           \
-        | select(.id == "password").value'
+    op item create                                           \
+        --dry-run                                            \
+        --category Password                                  \
+        --generate-password="letters,digits,$length"         \
+        --format json                                        \
+        | jq -r '.fields[] | select(.id == "password").value'
 done
