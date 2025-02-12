@@ -30,6 +30,6 @@ get_install_dir() {
 
 FILE="$(get_install_dir)/extch"
 
-curl "https://raw.githubusercontent.com/malathair/bash-utils/main/extch/extch.sh" >> $FILE
+curl "https://raw.githubusercontent.com/malathair/cli-tools/main/extch/extch.sh" >> $FILE
 chmod 755 $FILE
 

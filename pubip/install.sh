@@ -30,6 +30,6 @@ get_install_dir() {
 
 FILE="$(get_install_dir)/pubip"
 
-curl "https://raw.githubusercontent.com/malathair/bash-utils/main/pubip/pubip.sh" >> $FILE
+curl "https://raw.githubusercontent.com/malathair/cli-tools/main/pubip/pubip.sh" >> $FILE
 chmod 755 $FILE
 
