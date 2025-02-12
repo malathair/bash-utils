@@ -30,6 +30,6 @@ get_install_dir() {
 
 FILE="$(get_install_dir)/op-genpass"
 
-curl "https://raw.githubusercontent.com/malathair/cli-tools/main/op-genpass/op-genpass.sh" >> $FILE
+curl "https://raw.githubusercontent.com/malathair/cli-tools/main/op-genpass/op-genpass.sh" -o $FILE
 chmod 755 $FILE
 

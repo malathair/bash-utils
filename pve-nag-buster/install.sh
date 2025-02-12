@@ -30,6 +30,6 @@ get_install_dir() {
 
 FILE="$(get_install_dir)/pve-nag-buster"
 
-curl "https://raw.githubusercontent.com/malathair/cli-tools/main/pve-nag-buster/pve-nag-buster.sh" >> $FILE
+curl "https://raw.githubusercontent.com/malathair/cli-tools/main/pve-nag-buster/pve-nag-buster.sh" -o $FILE
 chmod 755 $FILE
 

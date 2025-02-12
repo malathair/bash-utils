@@ -1,7 +1,7 @@
 #!/bin/bash
 
 usage() {
-    echo "usage: $0 [-h] [-l LENGTH] [-n NUMBER]"
+    echo "usage: op-genpass [-h] [-l LENGTH] [-n NUMBER]"
     echo ""
     echo "A utility to generate secure passwords with 1password"
     echo ""
