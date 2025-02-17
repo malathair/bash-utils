@@ -6,7 +6,7 @@ import sys
 
 
 def main(length: int):
-    charset = string.ascii_letters + string.digits + "!" + "$"
+    charset = list(set(string.ascii_letters + string.digits + "!" + "$"))
 
     password = ""
 

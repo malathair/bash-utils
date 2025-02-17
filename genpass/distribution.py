@@ -20,4 +20,8 @@ def main(charset_size: int, iterations: int):
 
 
 if __name__ == "__main__":
-    main(int(sys.argv[1]), int(sys.argv[2]))
+    charset_size = int(sys.argv[1]) if len(sys.argv) >= 2 else 64
+    iterations = int(sys.argv[2]) if len(sys.argv) >= 3 else 10_000_000
+    
+
+    main(charset_size, iterations)
